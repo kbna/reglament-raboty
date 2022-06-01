@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <title>Регламент работы с AMO CRM</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div id="tst"></div>
+                <img class="header__logo" src="image/logo.svg" alt="logo">
+                <h1 class="header__title">IT School MAXIMA</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <img class="banner__logo" src="image/amo1.png" alt="amo">
+        </div>
+    </section>
+
+    <main>
+        <section id="statuses" class="guide">
+            <h2 class="guide__title"><div class="container">Статусы</div></h2>
+            <div class="container">               
+                <div class="guide-gif__preview">
+                    <img src="amo/viewing-statuses.gif" alt="viewing-statuses">
+                </div>
+                <ol class="guide__list">
+                    <li><span></span>Неразобранное 
+                        <div class="guide__list-description">
+                            Другими словами наши любимые заявки с сайта)
+                        </div>
+                    </li>
+
+                    <li><span></span>Входящая заявка
+                        <div class="guide__list-description">
+                            Входящий трафик по лид формам, основной вал заявок.
+                        </div>
+                    </li>
+
+                    <li><span></span>Квалифицированная заявка
+                        <div class="guide__list-description">
+                            Сюда заявки попадают если 1) Они ответили на сообщение бота (выбор вводного урока),
+                            2) Второй вид заявок с сайта, обозначаются тегом "WZ (Новый канал WA ****)"
+                        </div>
+                    </li>
+
+                    <li><span></span>Брак
+                        <div class="guide__list-description">
+                            Сюда мы помещаем заявки у которых не указан номер телефона
+                        </div>
+                    </li>
+
+                    <li><span></span>Для звонопса
+                        <div class="guide__list-description">
+                            В данным момент не используется
+                        </div>
+                    </li>
+
+                    <li><span></span>Нажали 1
+                        <div class="guide__list-description">
+                            В данным момент не используется
+                        </div>
+                    </li>
+
+                    <li><span></span>Загасились
+                        <div class="guide__list-description">
+                            Когда клиент гаситься(перестает выходить на связь без причины) можно поместить на время в этот статус,
+                            сразу после перехода заявки в этот статус отправляется сообщение с вопросом что ему помешало при выборе нашей школы
+                        </div>
+                    </li>
+
+                    <li><span></span>На передержку
+                        <div class="guide__list-description">
+                            Технический статус, используем в разное время по разному назначению
+                        </div>
+                    </li>
+
+                    <li><span></span>Ответил на смс перед звонком
+                        <div class="guide__list-description">
+                            В данным момент не используется
+                        </div>
+                    </li>
+
+                    <li><span></span>Недозвон
+                        <div class="guide__list-description">
+                            Если не удалось дозвониться до клиента мы помещаем его в этот статус. Автоматически бот оправит сообщение 
+                            с вопросом когда связаться с клиентом
+                        </div>
+                    </li>
+                    
+                    <li><span></span>Начал переписку после нд
+                        <div class="guide__list-description">
+                            Тот же Недозвон только бот ничего не отправляет, помещаем сюда если нет необходимости в автоматической отправке
+                        </div>
+                    </li>
+
+                    <li><span></span>Перезвонить
+                        <div class="guide__list-description">
+                            Вы смогли установить контакт с клиентом и вышли на доп. касание
+                        </div>
+                    </li>
+
+                    <li><span></span>Отложенные сделки
+                        <div class="guide__list-description">
+                            Помещаем клиентов которые сейчас не могут но хотят потом (при условии что вы сделали все возможное)
+                        </div>
+                    </li>
+
+                    <li><span></span>Решение
+                        <div class="guide__list-description">
+                            Когда клиент ушёл принимать окончательное решение
+                        </div>
+                    </li>
+
+                    <li><span></span>Выставлен счет
+                        <div class="guide__list-description">
+                            Выставили счёт на полную оплату\рассрочку
+                        </div>
+                    </li>
+
+                    <li><span></span>Внесена предоплата
+                        <div class="guide__list-description">
+                            Данный статус используеться когда клиент проходит по внутренней рассрочке, статус не меняеться пока клиент не выплатит
+                            полную стоимость курса
+                        </div>
+                    </li>
+
+                    <li><span></span>Успешно реализовано
+                        <div class="guide__list-description">
+                            Когда клиент оплатил курс
+                        </div>
+                    </li>
+
+                    <li><span></span>Закрыто не реализовано
+                        <div class="guide__list-description">
+                            Сюда мы помещаем клиентов по разным причина
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="client-card" class="guide guide--background-2">
+            <h2 class="guide__title guide__title--background"><div class="container">Ведение заявки\карточки клиента
+                <img class="guide__decor-img" src="image/card.png" alt="card">
+            </div></h2>
+            <div class="container">
+                <ol class="guide__list-2">
+                    <li>
+                        <div class="guide-gif__preview guide-gif__preview--small">
+                            <img src="amo/client-card/choice-SM.gif" alt="choice-SM">
+                        </div>
+                        <div class="guide__list-description-2">
+                            Проверяем ответственного, если берете заявки коллег обязательно ставите себя ответственным
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="guide-gif__preview guide-gif__preview--small">
+                            <img src="amo/client-card/choice-tags.gif" alt="choice-tags">
+                        </div>
+                        <div class="guide__list-description-2">
+                            Проставляем теги заявкам с сайта если автоматически не подтянулось, заявкам с телеграмма (от Алишы), с канала WZ . 
+                            Необходимые теги: Заявка с сайта, страна, frontend\java\python и т.д. Так же пока что проставляем теги стран и в лид форме
+                            если я не успел их сам проставить.                               
+                        </div>                           
+                    </li>
+
+                    <li>
+                        <div class="guide-gif__preview guide-gif__preview--small">
+                            <img src="amo/client-card/add-file.gif" alt="add-file">
+                        </div>
+                        <div class="guide__list-description-2">
+                            Совершаете звонок через мессенджер и обязательно прикрепляете скриншот звонка (не относиться к звонкам по стране)                            
+                        </div>                           
+                    </li>
+
+                    <li>
+                        <div class="guide-gif__preview guide-gif__preview--small">
+                            <img src="amo/client-card/add-note.gif" alt="add-note">
+                        </div>
+                        <div class="guide__list-description-2">
+                            По завершнению звонка составляете примечание где описываете результаты разговора. Примечания по типу "Все ок , решение в четверг"
+                            не принимаються , сами потом запутаетесь кто это и про что договорились. Пример примечания "О Ит услышал от друзей которые уже там ,
+                            сам работает на заводе, хочет удаленно. По условиям все понравилось , по цене тоже,  запросил доп инфу + договор. Решение в чт. в 13:00"                            
+                        </div>                           
+                    </li>
+
+                    <li>
+                        <div class="guide-gif__preview guide-gif__preview--small">
+                            <img src="amo/client-card/set-a-task.gif" alt="set-a-task">
+                        </div>
+                        <div class="guide__list-description-2">
+                            После примечания выставляем задачу на время как и договорились с клиентом.                            
+                        </div>                           
+                    </li>
+
+                    <li>
+                        <div class="guide-gif__preview guide-gif__preview--small">
+                            <img src="amo/client-card/set-status.gif" alt="set-status">
+                        </div>
+                        <div class="guide__list-description-2">
+                            Меняем статус в зависимости от результата , подробнее о статусах <a href="#statuses">Тык</a>                            
+                        </div>                           
+                    </li>
+
+                    <li>
+                        <div class="guide-gif__preview guide-gif__preview--small">
+                            <img src="amo/client-card/E-O.gif" alt="E-O">
+                        </div>
+                        <div class="guide__list-description-2">
+                            Заполняем ежедневную отчетность , ссылка 
+                            <a href="https://docs.google.com/spreadsheets/d/1FyZvx0uKiuRtfSfouvukPEdLY_7JpeIeFpPehMmTVMg/" target="_blank" rel="nofollow noopener noreferrer">Тык</a>                            
+                        </div>                           
+                    </li>
+
+                </ol>
+            </div>
+        </section>
+
+        <section id="task-work" class="guide">
+            <h2 class="guide__title guide__title--background"><div class="container">Работа с задачами
+                <img class="guide__decor-img" src="image/card.png" alt="card">
+            </div></h2>
+            <div class="container">
+                <ol class="guide__list-2">
+                    <li>
+                        <div class="guide-gif__preview guide-gif__preview--small">
+                            <img src="amo/client-card/add-file.gif" alt="add-file">
+                        </div>
+                        <div class="guide__list-description-2">
+                            После звонка клиенту так же выгружаем скрин (не относиться к звонкам по стране)
+                        </div>
+                    </li>
+                    <li>
+                        <div class="guide-gif__preview guide-gif__preview--small">
+                            <img src="amo/task/task-completed.gif" alt="task-completed">
+                        </div>
+                        <div class="guide__list-description-2">
+                            Задачу закрываем с актуальным комментарием, к примеру "Попросил перезвонить завтра, сегодня очень занят" и выставляем новую задачу на 
+                            дату и время которую оговорили
+                        </div>
+                    </li>
+                    <li>
+                        <div class="guide-gif__preview guide-gif__preview--small">
+                            <img src="amo/task/task-delete.gif" alt="task-delete">
+                        </div>
+                        <div class="guide__list-description-2">
+                            Задачу удалять запрещенно! Только дубль. Закрывать задачу без коммента также нельзя , если не дозвонились в результате задачи ставите 
+                            нд.
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="mxm-credit" class="guide">
+            <h2 class="guide__title guide__title--background"><div class="container">Работа с внутренней рассрочкой
+                <img class="guide__decor-img" src="image/mxm.png" alt="mxm">
+            </div></h2>
+            <div class="container">
+                <ol class="guide__list-2">
+                    <li>
+                        <div class="guide-gif__preview guide-gif__preview--small">
+                            <img src="amo/mxm-credit/mxm-credit-1.gif" alt="mxm-credit-1">
+                        </div>
+                        <div class="guide__list-description-2">
+                            В примечаниях обязательно пишем условия внутренней рассрочки для клиента , пример "52к на 4 месяца 22/10/10/10, оплата в 15 числах"
+                            Тип оплаты "Внутренняя рассрочка"
+                        </div>
+                    </li>
+                    <li>
+                        <div class="guide-gif__preview guide-gif__preview--small">
+                            <img src="amo/mxm-credit/mxm-credit-2.gif" alt="mxm-credit-2">
+                        </div>
+                        <div class="guide__list-description-2">
+                            После оплаты так же фиксируем данную инфу в примечаниях "15 оплатил 22к, остаток 30к" и выставляем задачу на дату след. платежа,
+                            не забываем менять статус на актульаный в конкретном случае используем "Внесена предоплата"
+                        </div>
+                    </li>
+                    <li>
+                        <div class="guide-gif__preview guide-gif__preview--small">
+                            <img src="amo/mxm-credit/mxm-credit-3.png" alt="mxm-credit-3">
+                        </div>
+                        <div class="guide__list-description-2">
+                            Обязательно вносим инфу о графике платежей в таблицу дебета по ссылке
+                            <a href="https://docs.google.com/spreadsheets/d/1Wf-Zc22KPH_2wgPED0O9a3pUlCkosNU6pfog3EEYqTY/edit#gid=399991668" target="_blank" rel="nofollow noopener noreferrer">Тык</a>  
+                        </div>
+                    </li>
+                    <li>
+                        <div class="guide-gif__preview guide-gif__preview--small">
+                            <img src="amo/mxm-credit/mxm-credit-4.gif" alt="mxm-credit-4">
+                        </div>
+                        <div class="guide__list-description-2">
+                            После того как клиент оплатил всю сумму меняем статус на "Успешно реализовано"                               
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="working-rules" class="guide guide--background-1">
+            <h2 class="guide__title guide__title--background">
+                <div class="container">Общие правила работы <br> (список может обновляться)
+                    <img class="guide__decor-img guide__decor-img-anim-1" src="image/hand.svg" alt="hand">
+                </div> 
+            </h2>
+            <div class="container">            
+                <ol id="statuses" class="guide__list">
+                    <li><span></span>
+                        <div class="guide__list-description">
+                            Если Ваш рабочий день начинается в 10:00 то как минимум в 10:10 уже должен быть совершен первый звонок
+                        </div>
+                    </li>
+                    <li><span></span>
+                        <div class="guide__list-description">
+                            Летучки проводяться каждый день в 11:00 и 17:30
+                        </div>
+                    </li>
+                    <li><span></span>
+                        <div class="guide__list-description">
+                            Новые заявки (кроме заявок с сайта) автоматически распределяются между менеджерами. Период в который берутся
+                            заявки не может превышать 1 часа
+                        </div>
+                    </li>
+                    <li><span></span>
+                        <div class="guide__list-description">
+                            За рабочий день у менеджера должно быть не менее 50 звонков либо же 3.5 часов диалогов
+                        </div>
+                    </li>
+                    <li><span></span>
+                        <div class="guide__list-description">
+                            Заявку ведем на протяжении минимум 3 касаний, в случае заявки с сайта минимум 5 касаний
+                        </div>
+                    </li>
+                    <li><span></span>
+                        <div class="guide__list-description">
+                            Воровать чужие заявки ЗАПРЕЩЕННО, кроме случаев когда Вам отдают заявку \ статуса закрыто 
+                        </div>
+                    </li>
+                    <li><span></span>
+                        <div class="guide__list-description">
+                            При работе с задачами важно понимать что если Вы договорились созвониться в 15:00 то звонок и должен быть в 15:00,
+                            не через час \ день \ неделю \ месяц.
+                        </div>
+                    </li>
+                    <li><span></span>
+                        <div class="guide__list-description">
+                            Важно не допускать просрочек задач, планируйте свой день так что бы у Вас не было к примеру на 15:00 10 созвонов по решениям
+                        </div>
+                    </li>
+                    <li><span></span>
+                        <div class="guide__list-description">
+                            Когда работаем с задачами ЗАПРЕЩЕННО просто так переносить задачи
+                        </div>
+                    </li>
+                    <li><span></span>
+                        <div class="guide__list-description">
+                            Чтобы все успевать у Вас должно быть в пулле порядка 50 задач + новые , если все вовремя делать то можно
+                            избежать появления "Сундука"
+                        </div>
+                    </li>
+                    <li><span></span>
+                        <div class="guide__list-description">
+                            Если у Вас закончились задачи \ новые заявки а продавать еще хочеться \ надо Вы всегда можете взять заявки
+                            со статуса "Закрыто не реализовано", для таких сделок вы можете предлагать 40% скидку. Если надо помощь обращайтесь ко мне
+                        </div>
+                    </li>
+                    <li><span></span>
+                        <div class="guide__list-description">
+                            Заявки с сайта\канала WZ\телеграмма (от Алиши) обрабатываються в первую очередь. Следующие по приоритету 
+                            "Квалифицированная", "Входящая"
+                        </div>
+                    </li>
+                    <li><span></span>
+                        <div class="guide__list-description">
+                            Заявки с сайта делятся между всеми менеджерами. В данный момент работаем 40%/30%/30%
+                        </div>
+                    </li>
+                    <li><span></span>
+                        <div class="guide__list-description">
+                            Если заявку с сайта \ дебет с нее,  посчитали как личную продажу SM сделавший так не получит свою "долю"
+                        </div>
+                    </li>
+                    <li><span></span>
+                        <div class="guide__list-description">
+                            Если ваша заявка с сайта после беседы с Вами хочет привести друга, то "друг" уже будет вашей личной продажей
+                            которая не разбивается.
+                        </div>
+                    </li>
+                    <li><span></span>
+                        <div class="guide__list-description">
+                            По окончанию рабочего дня SM проверяет свою рабочую область (СРМ) на предмет проебов , также сбрасывает скриншот с
+                            ежедневной отчетностью + примечания в телеграмм канал "ОП Максима"
+                        </div>
+                    </li>
+                    
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <a href="https://maxima.school/" target="_blank" rel="nofollow noopener noreferrer"><img src="image/logo-big.png" alt="logo-big"></a> 
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
